@@ -27,7 +27,7 @@ The print format is still being designed. For now, a button press prints a place
 | J2, JST-XH 5-pin (PRINTER) | The printer's TTL cable: GND, RX, TX, DTR, VH. |
 | J3, 2-pin header (BUTTON) | The push button. |
 
-The printer can draw close to 2 A on dark lines, so by default it has its own supply on J5. To run everything from the USB-C supply instead, bridge JP1 (USB»PRN) and use a 5 V 3 A supply.
+The printer can draw close to 2 A on dark lines, so by default it has its own supply on J5. To run everything from the USB-C supply instead, close the JP1 solder bridge (USB»PRN) with a blob of solder and use a 5 V 3 A supply.
 
 ## Setup
 
@@ -77,6 +77,7 @@ The printer can draw close to 2 A on dark lines, so by default it has its own su
 | `pi/sdcard/` | `flash.sh` writes the SD card with `dd` (Linux, no Imager needed); `firstboot.py` writes the cloud-init user, Wi-Fi and SSH settings onto it, from `flash.env`. |
 | `pi/tests/` | `test_printer.py` prints a test page (text styles, character set, darkness check); `test_codes.py` prints barcodes and QR codes (needs `segno`). |
 | `pcb/` | KiCad 10 project for the tapee HAT, a Pi Zero HAT with USB-C power, the printer connector and the button header. `tapee_hat_render.png` shows both sides. |
+| `pcb/lib/` | Project footprint library: the TYPE-C 6P USB-C receptacle (LCSC C456012) and its 3D model. |
 | `pcb/art/` | Scripts that generate the silkscreen labels and artwork, and `render.sh`, which redraws `pcb/tapee_hat_render.png` from the board. |
 | `cad/robot/` | The printable robot body: CadQuery model, STEP assembly, one STL per part (`stl/`) and renders (`images/`). See its README. |
 | `cad/printer/` | Measured CAD model of the DP-EH500 printer, used by the robot model. |
@@ -91,7 +92,7 @@ The board is 2 layers, 65 × 30 mm. DRC shows no errors and no unconnected items
 Fabrication outputs are not kept in git. Export them from the saved board into `pcb/fab/` (git ignores it), for example with Konnect's `export_manufacturing_package` for JLCPCB, and zip the Gerber and drill files.
 
 - **PCB:** upload `tapee_hat-gerbers.zip`. Pick black solder mask; the silkscreen is drawn for the yellow look.
-- **Assembly (optional):** upload `BOM-tapee_hat.csv` and `CPL-tapee_hat.csv`. Every symbol carries an `LCSC` field, so export the BOM with an LCSC column and JLCPCB matches the parts itself. The resistors, the 10 µF capacitors and the TVS diodes are Basic or Preferred parts; the rest are Extended. JP1 (printer from USB-C) and the mounting holes are marked do-not-place. Check stock in the BOM tool, and check every part's rotation in the placement preview before you order. J1, the 2×20 socket, sits on the bottom.
+- **Assembly (optional):** upload `BOM-tapee_hat.csv` and `CPL-tapee_hat.csv`. Every symbol carries an `LCSC` field, so export the BOM with an LCSC column and JLCPCB matches the parts itself. The resistors, the 10 µF and 22 µF capacitors and the TVS diodes are Basic or Preferred parts; U1, C1 and the connectors are Extended (JLCPCB has no Basic connectors). JP1 is a solder bridge, not a part, and it and the mounting holes are marked do-not-place. Check stock in the BOM tool, and check every part's rotation in the placement preview before you order. J1, the 2×20 socket, sits on the bottom.
 
 ## Troubleshooting
 
