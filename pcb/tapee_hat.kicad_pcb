@@ -398,6 +398,7 @@
 			)
 		)
 		(path "/5bb5d8ea-35a1-4edf-9b29-9d813a655271")
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1140,6 +1141,7 @@
 			)
 		)
 		(path "/2652ff88-e74a-455e-a887-83c483d08b51")
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1237,6 +1239,7 @@
 			)
 		)
 		(path "/ccb5d207-b096-4dd6-98f2-9eb22c5d4897")
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1597,6 +1600,7 @@
 			)
 		)
 		(path "/10996ddf-65ad-4b07-a207-620443cb9da1")
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.177064 -1.71)
@@ -2027,7 +2031,7 @@
 				)
 			)
 		)
-		(property "Value" "220uF 10V"
+		(property "Value" "220uF 16V"
 			(at 0 4.35 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2452,7 +2456,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF 16V"
+		(property "Value" "10uF 25V"
 			(at 0 1.68 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2724,7 +2728,7 @@
 				)
 			)
 		)
-		(property "Value" "470uF 10V"
+		(property "Value" "470uF 25V"
 			(at 0 5.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -3528,6 +3532,7 @@
 			)
 		)
 		(path "/6133ec8b-2a84-45d1-bba5-40f1400abc26")
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -4087,7 +4092,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF 16V"
+		(property "Value" "10uF 25V"
 			(at 0 1.679999 180)
 			(unlocked yes)
 			(layer "F.SilkS")
