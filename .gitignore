@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local config
+.env
+pi/sdcard/flash.env
+*.img
+*.img.xz
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local design-tool settings
+.impeccable/
+
+# KiCad: per-user state, lock files, local history and backups
+*.kicad_prl
+*.lck
+fp-info-cache
+*-backups/
+pcb/.history/
+
+# Generated files the scripts rebuild (STEP and STL exports are kept)
+cad/robot/render/
+pcb/art/build/
+
+# Fabrication outputs: exported from the board when ordering, kept local
+pcb/fab/
+
+# Development material and old variants, kept local: git holds only the latest design
+cad/concepts/
+cad/measure/
+pi/wiring.html
+*.3mf
