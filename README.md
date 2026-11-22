@@ -89,7 +89,7 @@ The board is 2 layers, 65 × 30 mm. DRC shows no errors and no unconnected items
 Fabrication outputs are not kept in git. Export them from the saved board into `pcb/fab/` (git ignores it), for example with Konnect's `export_manufacturing_package` for JLCPCB, and zip the Gerber and drill files.
 
 - **PCB:** upload `tapee_hat-gerbers.zip`. Pick black solder mask; the silkscreen is drawn for the yellow look.
-- **Assembly (optional):** upload `BOM-tapee_hat.csv` and `CPL-tapee_hat.csv`. The BOM has no LCSC part numbers, so match each part in JLCPCB's BOM tool. Leave H1–H4 (mounting holes) unplaced. Check every part's rotation in the placement preview before you order. J1, the 2×20 socket, sits on the bottom.
+- **Assembly (optional):** upload `BOM-tapee_hat.csv` and `CPL-tapee_hat.csv`. Every symbol carries an `LCSC` field, so export the BOM with an LCSC column and JLCPCB matches the parts itself. The resistors, the 10 µF capacitors and the TVS diodes are Basic or Preferred parts; the rest are Extended. JP1 (printer from USB-C) and the mounting holes are marked do-not-place. Check stock in the BOM tool, and check every part's rotation in the placement preview before you order. J1, the 2×20 socket, sits on the bottom.
 
 ## Troubleshooting
 
