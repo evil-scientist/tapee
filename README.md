@@ -2,6 +2,8 @@
 
 tapee is a small internet-connected robot that prints short snippets on thermal paper. A Raspberry Pi Zero drives a 58 mm TTL receipt printer. Press the button on top and it prints a slip.
 
+![tapee robot, outside and cut open to show the printer clamp, the Pi on its standoffs and the button switch](cad/robot/images/robot_front.png)
+
 The print format is still being designed. For now, a button press prints a placeholder ticket with the date and time.
 
 ## Hardware
