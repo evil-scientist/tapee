@@ -1,0 +1,13 @@
+[Unit]
+Description=Tapee: print a ticket when the button is pressed
+After=multi-user.target
+
+[Service]
+User=@USER@
+WorkingDirectory=@DIR@
+ExecStart=/usr/bin/python3 @DIR@/tapee.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
