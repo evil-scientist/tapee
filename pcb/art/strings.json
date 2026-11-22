@@ -1,0 +1,79 @@
+{
+  "printer": {
+    "text": "PRINTER",
+    "cap": 0.95
+  },
+  "p_gnd": {
+    "text": "GND",
+    "cap": 0.8
+  },
+  "p_rx": {
+    "text": "RX",
+    "cap": 0.8
+  },
+  "p_tx": {
+    "text": "TX",
+    "cap": 0.8
+  },
+  "p_dtr": {
+    "text": "DTR",
+    "cap": 0.8
+  },
+  "p_vh": {
+    "text": "VH",
+    "cap": 0.8
+  },
+  "button": {
+    "text": "BUTTON",
+    "cap": 1.0
+  },
+  "usb": {
+    "text": "USB 5V IN",
+    "cap": 0.8
+  },
+  "jumper": {
+    "text": "USB\u00bbPRN",
+    "cap": 0.85
+  },
+  "plus": {
+    "text": "+",
+    "cap": 1.2
+  },
+  "minus": {
+    "text": "\u2013",
+    "cap": 1.2
+  },
+  "prn5v": {
+    "text": "PRINTER 5V",
+    "cap": 0.9
+  },
+  "tapee": {
+    "text": "tapee",
+    "cap": 2.3,
+    "weight": "demi"
+  },
+  "sub": {
+    "text": "PRINTER HAT",
+    "cap": 0.8,
+    "weight": "book"
+  },
+  "b_tapee": {
+    "text": "tapee",
+    "cap": 5.0
+  },
+  "b_sub": {
+    "text": "THERMAL PRINTER HAT",
+    "cap": 1.0,
+    "weight": "book"
+  },
+  "b_rev": {
+    "text": "REV 1.0 \u00b7 2026",
+    "cap": 0.9,
+    "weight": "book"
+  },
+  "b_sub2": {
+    "text": "FOR RASPBERRY PI ZERO",
+    "cap": 0.9,
+    "weight": "book"
+  }
+}
